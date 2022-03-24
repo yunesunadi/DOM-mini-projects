@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+            integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Counter</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1 class="title">Counter</h1>
+                <span id="count">0</span>
+                <div class="btn-list">
+                    <button class="btn increase-btn">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <button class="btn reset-btn">
+                        <i class="fa-solid fa-rotate"></i>
+                    </button>
+                    <button class="btn decrease-btn">
+                        <i class="fa-solid fa-minus"></i>
+                    </button>
+                </div>
+                <div class="range">
+                    <h2 class="range-title">Range :</h2>
+                    <label for="plus">&plus;</label>
+                    <input type="text" name="plus" id="plus" />
+                    <label for="minus">&minus;</label>
+                    <input type="text" name="minus" id="minus" />
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>

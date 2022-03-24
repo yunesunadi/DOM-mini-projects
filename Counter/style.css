@@ -1,0 +1,128 @@
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #f4fcd9, #c5d8a4);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 5em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: -1px 1px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 4rem;
+    color: #bb9981;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5em;
+    text-shadow: -1px 1px #534340, -2px 2px #534340, -3px 3px #534340,
+        -4px 4px #534340;
+}
+
+#count {
+    font-size: 6rem;
+    color: #bb9981;
+    text-shadow: -1px 1px #534340, -2px 2px #534340, -3px 3px #534340,
+        -4px 4px #534340;
+    margin-bottom: 0.3em;
+}
+
+.btn-list {
+    margin-bottom: 3em;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #bb9981;
+    padding: 1em 1.5em;
+    box-shadow: -6px 6px #534340;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -6px;
+    border: 6px solid transparent;
+    border-right-color: #534340;
+    border-left-width: 0;
+}
+
+.btn::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+    border: 6px solid transparent;
+    border-top-color: #534340;
+    border-bottom-width: 0;
+}
+
+.btn:active {
+    transform: translate(-4px, 4px);
+    box-shadow: -2px 2px #534340;
+    transition: all 0.02s ease;
+}
+
+.btn:active::before {
+    left: -4px;
+    border: 2px solid transparent;
+    border-right-color: #534340;
+    transition: all 0.02s ease;
+}
+
+.btn:active::after {
+    bottom: -4px;
+    border: 2px solid transparent;
+    border-top-color: #534340;
+    transition: all 0.02s ease;
+}
+
+.btn + .btn {
+    margin-left: 1em;
+}
+
+.range {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.range-title {
+    font-size: 2rem;
+    color: #534340;
+}
+
+label {
+    font-size: 2rem;
+    color: #534340;
+}
+
+input[type="text"] {
+    width: 30px;
+    height: 30px;
+    outline: none;
+    text-align: center;
+    border: 1px solid #534340;
+    background-color: #c5d8a4;
+}
