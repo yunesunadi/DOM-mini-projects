@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap");
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.review {
+    width: 300px;
+    overflow: hidden;
+}
+
+.quote {
+    position: relative;
+    font-size: 4rem;
+    padding: 0 0.2em;
+    background-color: #fff;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+#text {
+    font-size: 1.5rem;
+    line-height: 1.25em;
+    padding: 2em 1.5em;
+    margin-top: -20px;
+    border: 2px solid #000;
+    position: relative;
+}
+
+#text::before {
+    content: "";
+    position: absolute;
+    left: 26px;
+    bottom: -40px;
+    border: 20px solid transparent;
+    border-top-color: #000;
+    border-left-color: #000;
+}
+
+#text::after {
+    content: "";
+    position: absolute;
+    left: 28px;
+    bottom: -30px;
+    border: 20px solid transparent;
+    border-top-color: #fff;
+    border-left-color: #fff;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 43px;
+}
+
+#profile {
+    width: 60px;
+    border-radius: 50%;
+}
+
+#name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+
+#job {
+    font-size: 1.15rem;
+}
+
+.btns {
+    margin-top: -4em;
+    margin-left: 22em;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    font-size: 2rem;
+}
+
+.btn:first-child {
+    margin-right: 1em;
+}
+
+.move-left {
+    animation: moveLeft 0.7s ease-out;
+}
+
+.move-right {
+    animation: moveRight 0.7s ease-out;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
