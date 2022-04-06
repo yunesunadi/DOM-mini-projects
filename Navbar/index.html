@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Navbar</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header">
+            <a href="#" class="logo-link">
+                <h1 class="logo">LOGO</h1>
+            </a>
+            <div class="menu-icon">
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox" class="checkbox">
+                    <div class="bars">
+                        <span class="bar bar-1"></span>
+                        <span class="bar bar-2"></span>
+                        <span class="bar bar-3"></span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Services <span class="nav-caret"><i
+                            class="fa-solid fa-caret-down"></i></i></span></a>
+                <ul class="dropdown-list">
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">One</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-link">Two <span class="dropdown-caret"><i
+                                    class="fa-solid fa-caret-down"></i></i></span></a>
+                        <ul class="sub-dropdown-list">
+                            <li class="sub-dropdown-item">
+                                <a href="#" class="sub-dropdown-link">One</a>
+                            </li>
+                            <li class="sub-dropdown-item">
+                                <a href="#" class="sub-dropdown-link">Two</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        </ul>
+    </nav>
+    <script src="app.js"></script>
+</body>
+
+</html>
