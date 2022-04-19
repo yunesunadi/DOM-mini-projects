@@ -129,6 +129,7 @@ html {
     padding: 1.3em;
     color: #000;
     text-decoration: none;
+    transition: all 0.2s ease-in;
 }
 
 .nav-item:hover .nav-link,
@@ -139,7 +140,6 @@ html {
 .sub-dropdown-item:focus .sub-dropdown-link {
     color: #fff;
     background-color: #d4a9a9;
-    transition: all 0.2s ease-in;
 }
 
 @media (min-width: 768px) {
