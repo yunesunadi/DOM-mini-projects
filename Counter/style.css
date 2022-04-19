@@ -56,6 +56,7 @@ html {
     padding: 1em 1.5em;
     box-shadow: -6px 6px #534340;
     position: relative;
+    transition: all 0.05s ease;
 }
 
 .btn::before {
@@ -66,6 +67,7 @@ html {
     border: 6px solid transparent;
     border-right-color: #534340;
     border-left-width: 0;
+    transition: all 0.05s ease;
 }
 
 .btn::after {
@@ -76,26 +78,24 @@ html {
     border: 6px solid transparent;
     border-top-color: #534340;
     border-bottom-width: 0;
+    transition: all 0.05s ease;
 }
 
 .btn:active {
     transform: translate(-4px, 4px);
     box-shadow: -2px 2px #534340;
-    transition: all 0.02s ease;
 }
 
 .btn:active::before {
     left: -4px;
     border: 2px solid transparent;
     border-right-color: #534340;
-    transition: all 0.02s ease;
 }
 
 .btn:active::after {
     bottom: -4px;
     border: 2px solid transparent;
     border-top-color: #534340;
-    transition: all 0.02s ease;
 }
 
 .btn + .btn {
