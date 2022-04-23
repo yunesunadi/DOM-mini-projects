@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto&display=swap");
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    padding: 0 1.3em;
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+}
+
+.faq-card {
+    padding: 2.5em 2.5em 3.5em;
+    width: 80%;
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-size: 2.3rem;
+    font-family: "Lobster Two", cursive;
+    font-weight: 700;
+    color: #654ea3;
+    text-align: center;
+    margin-bottom: 0.8em;
+}
+
+.faq {
+    position: relative;
+}
+
+.faq::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 100%;
+    border-bottom: 1.5px solid #654ea3;
+}
+
+.faq:not(:last-child) {
+    margin-bottom: 2.5em;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.question {
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.chevron-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s ease-in;
+}
+
+.active .chevron-icon {
+    transform: rotateX(180deg);
+}
+
+.answer {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 0.3em;
+    transition: max-height 1s cubic-bezier(0, 1, 0, 1); /* To fix max-height's delay */
+}
+
+.active .answer {
+    max-height: 100px;
+    transition: max-height 0.6s ease-in;
+}
+
+.question-title,
+.chevron-icon,
+.answer {
+    color: #654ea3;
+}
+
+@media (min-width: 768px) {
+    .faq-card {
+        padding: 4em 3.5em;
+    }
+    .title {
+        font-size: 2.8rem;
+    }
+    .question {
+        font-size: 1.6rem;
+    }
+    .chevron-icon {
+        font-size: 1.6rem;
+    }
+    .answer {
+        font-size: 1.4rem;
+    }
+}
