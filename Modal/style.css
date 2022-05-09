@@ -43,25 +43,6 @@ body {
 }
 
 .overlay {
-    display: none;
-}
-
-.active-overlay {
-    display: block;
-}
-
-.modal {
-    transform: scale(0);
-    opacity: 0;
-    transition: all 0.3s ease-out;
-}
-
-.active-modal {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.overlay {
     position: absolute;
     z-index: 2;
     top: 0;
@@ -69,6 +50,14 @@ body {
     bottom: 0;
     right: 0;
     background-color: rgba(210, 105, 30, 0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-out;
+}
+
+.active.overlay {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .modal {
@@ -78,6 +67,14 @@ body {
     width: 200px;
     padding: 2em 3em;
     box-shadow: 4px 4px 6px rgb(0, 0, 0, 0.3);
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.active.modal {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .close-btn {

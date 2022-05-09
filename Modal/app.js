@@ -5,8 +5,8 @@ const overlay = document.querySelector(".overlay");
 
 const toggleModal = (element) => {
     element.addEventListener("click", () => {
-        modal.classList.toggle("active-modal");
-        overlay.classList.toggle("active-overlay");
+        modal.classList.toggle("active");
+        overlay.classList.toggle("active");
     });
 };
 
