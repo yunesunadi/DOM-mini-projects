@@ -71,7 +71,7 @@ body {
     font-size: 1.2rem;
     border: none;
     background-color: transparent;
-    transition: transform 0.3s ease-in;
+    transition: transform 0.2s ease-in;
 }
 
 .active .chevron-icon {
@@ -86,12 +86,12 @@ body {
     max-height: 0;
     overflow: hidden;
     margin-top: 0.3em;
-    transition: max-height 1s cubic-bezier(0, 1, 0, 1); /* To fix max-height's delay */
+    transition: max-height 0.4s cubic-bezier(0, 1, 0, 1); /* To fix max-height's delay */
 }
 
 .active .answer {
     max-height: 100px;
-    transition: max-height 0.6s ease-in;
+    transition: max-height 0.5s ease-in;
 }
 
 .question-title,
