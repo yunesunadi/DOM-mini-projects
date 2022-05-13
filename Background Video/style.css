@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.preloader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    background-color: #fff;
+    z-index: 2;
+    text-align: center;
+    transition: opacity 0.3s ease-in;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preloader-text {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+}
+
+.progress-bar {
+    position: relative;
+    width: 200px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.progress {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0073ff;
+    width: 0%;
+    height: auto;
+    border-radius: inherit;
+}
+
+.progress-percent {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    padding: 0.8em 1em;
+    background-color: #fff;
+}
+
+.background-video {
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video-control {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+}
+
+.video-control-input {
+    display: none;
+}
+
+.video-control-btn {
+    cursor: pointer;
+    position: relative;
+    padding: 1.2em 3.5em;
+    background-color: #fff;
+}
+
+.video-control-btn::before {
+    content: "\23F8 Pause";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+.video-control-input:checked + .video-control-btn::before {
+    content: "\23F5 Play";
+}
+
+@media (min-width: 768px) {
+    .preloader-text {
+        font-size: 2rem;
+    }
+    .progress-bar {
+        width: 250px;
+        height: 25px;
+        border-radius: 20px;
+    }
+    .progress-percent {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 2.3rem;
+        padding: 0.7em 1em;
+    }
+    .video-control {
+        left: 60px;
+        bottom: 60px;
+    }
+    .video-control-btn {
+        padding: 1.4em 4.3em;
+    }
+    .video-control-btn::before {
+        font-size: 1.8rem;
+    }
+}
