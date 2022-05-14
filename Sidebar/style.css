@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 *,
@@ -38,8 +39,10 @@ body {
 }
 
 .close-icon {
-    text-align: right;
-    margin: 1em 1.3em 1em 0;
+    display: inline;
+    float: right;
+    padding: 0.05em 0.2em;
+    margin: 1.1em 1.1em 0.8em 0;
 }
 
 .nav {
@@ -60,6 +63,7 @@ body {
 }
 
 .nav-list {
+    clear: both;
     text-align: center;
 }
 

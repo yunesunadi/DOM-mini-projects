@@ -2,6 +2,7 @@
 
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 *,
@@ -14,13 +15,12 @@ body {
     display: grid;
     place-content: center;
     height: 100vh;
-    padding: 0 1.3em;
+    padding: 0 2em;
     background: linear-gradient(to right, #eaafc8, #654ea3);
 }
 
 .faq-card {
     padding: 2.5em 2.5em 3.5em;
-    width: 80%;
     max-width: 550px;
     margin: 0 auto;
     background-color: #fff;
