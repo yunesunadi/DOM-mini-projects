@@ -116,7 +116,7 @@ body {
 }
 
 .video-control-btn::before {
-    content: "\23F8 Pause";
+    content: "\23F5 Play";
     position: absolute;
     top: 50%;
     left: 50%;
@@ -125,7 +125,7 @@ body {
 }
 
 .video-control-input:checked + .video-control-btn::before {
-    content: "\23F5 Play";
+    content: "\23F8 Pause";
 }
 
 @media (min-width: 768px) {

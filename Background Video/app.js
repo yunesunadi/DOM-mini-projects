@@ -1,6 +1,5 @@
 const video = document.querySelector(".background-video");
-const controlBtn = document.querySelector(".video-control-btn");
-const controlInput = document.querySelector(".video-control-input");
+const controlBtn = document.querySelector(".video-control-input");
 const progress = document.querySelector(".progress");
 const progressPercent = document.querySelector(".progress-percent");
 const preloader = document.querySelector(".preloader");
@@ -25,7 +24,7 @@ setTimeout(() => {
 }, 2600);
 
 controlBtn.addEventListener("click", () => {
-    if (controlInput.checked) {
+    if (controlBtn.checked) {
         video.play();
     } else {
         video.pause();
