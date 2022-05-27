@@ -3,7 +3,7 @@ const closeBtn = document.querySelector(".close-icon");
 const nav = document.querySelector(".nav");
 const navLinks = document.querySelectorAll(".nav-item .nav-link");
 
-let toggleMenu = (btn) => {
+const toggleMenu = (btn) => {
     btn.addEventListener("click", () => {
         nav.classList.toggle("show-menu");
         navLinks.forEach((navLink, index) => {
