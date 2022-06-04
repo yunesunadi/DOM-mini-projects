@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background-color: #321c81;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    text-align: center;
+}
+
+.time-container {
+    width: 48px;
+}
+
+.time-count {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #321c81;
+    background-color: #eee;
+    width: 100%;
+    height: 62px;
+    line-height: 62px;
+    border-radius: 8px;
+    margin-bottom: 0.3em;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.time-label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #eee;
+}
+
+.colon {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #eee;
+    margin-top: 1.2em;
+}
+
+.colon:last-child {
+    display: none;
+}
+
+.new-year {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+.new-year-message {
+    display: grid;
+    place-content: center;
+    height: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #321c81;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3rem;
+        margin-bottom: 0.8em;
+    }
+    .countdown {
+        gap: 10px;
+    }
+    .time-container {
+        width: 55px;
+    }
+    .time-count {
+        font-size: 2.3rem;
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 0.5em;
+    }
+    .time-label {
+        font-size: 1.5rem;
+    }
+    .colon {
+        font-size: 2.2rem;
+        margin-top: 1.1em;
+    }
+    .new-year-message {
+        font-size: 3rem;
+    }
+}
