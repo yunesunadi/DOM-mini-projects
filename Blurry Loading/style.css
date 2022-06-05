@@ -1,0 +1,59 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+}
+
+.bg-container {
+    background: url("images/majkell-projku-a_-hYhh-R3Q-unsplash.jpg")
+        center/cover no-repeat;
+    min-height: 100vh;
+}
+
+.title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #a26232;
+    padding: 0.8em 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.loading-percent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    place-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .title {
+        top: 8%;
+        font-size: 2.5rem;
+        padding: 0.7em 1.3em;
+    }
+    .loading-percent {
+        font-size: 3.5rem;
+    }
+}
