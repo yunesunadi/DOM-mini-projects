@@ -1,0 +1,153 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #434343;
+}
+
+.container {
+    padding: 3.5em 2em;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: #f8f8f8;
+    margin-bottom: 0.7em;
+    text-align: center;
+}
+
+.guide {
+    font-size: 1.4rem;
+    color: #f8f8f8;
+    margin-bottom: 1.8em;
+    text-align: center;
+}
+
+.tag-container {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 75px;
+    padding-top: 0.5em;
+    background-color: #f8f8f8;
+    border: 2px solid #bbb;
+}
+
+.tag {
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    padding: 0.3em 0.4em;
+    height: 27px;
+    background-color: #767676;
+    margin-left: 0.3em;
+    margin-bottom: 0.3em;
+    border-radius: 3px;
+}
+
+.fa-square-xmark {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    margin-left: 0.3em;
+}
+
+.fa-square-xmark:hover,
+.fa-square-xmark:focus {
+    color: #ccc;
+}
+
+.tag-input {
+    font-size: 1.4rem;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    min-width: 30px;
+    height: 27px;
+    outline: none;
+    margin-left: 0.3em;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.tag-options {
+    overflow: auto;
+    max-height: 200px;
+    margin-top: 0.2em;
+    border: 2px solid #bbb;
+}
+
+.tag-option {
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #f8f8f8;
+    background-color: #767676;
+    padding: 0.5em 1em;
+}
+
+.tag-option:hover,
+.tag-option:focus {
+    color: #767676;
+    background-color: #f8f8f8;
+}
+
+.tag-option:not(:last-of-type) {
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.highlight {
+    text-decoration: underline;
+}
+
+.disable {
+    background-color: #c1c1c1;
+    color: #dfdfdf;
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 4.5em 2em;
+    }
+    .title {
+        font-size: 2.8rem;
+    }
+    .guide {
+        font-size: 1.8rem;
+        width: 510px;
+        margin: 0 auto 1.8em;
+    }
+    .tags {
+        min-height: 80px;
+        padding-top: 0.6em;
+    }
+    .tag {
+        font-size: 1.6rem;
+        padding: 0.45em 0.5em;
+        height: 30px;
+    }
+    .fa-square-xmark {
+        font-size: 1.5rem;
+    }
+    .tag-input {
+        height: 30px;
+    }
+    .tag-options {
+        max-height: 230px;
+        margin-top: 0.3em;
+    }
+    .tag-option {
+        font-size: 1.6rem;
+    }
+}
