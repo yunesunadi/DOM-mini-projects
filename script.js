@@ -3,7 +3,7 @@ import projects from "./projects.js";
 const projectsContainer = document.querySelector(".cards");
 const githubBaseUrl =
     "https://github.com/yunesunadi/DOM-mini-projects/blob/master/";
-const siteBaseUrl = "https://yunesunadi.com/DOM%20Mini%20Projects/";
+const siteBaseUrl = "https://yunesunadi.com/DOM-mini-projects/";
 let cardEls = "";
 
 projects.forEach(({ id, name }) => {
